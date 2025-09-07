@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: server
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false # N�o registrar este servi�o no Eureka
+    fetch-registry: false # N�o buscar outros servi�os no Eureka
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/ # URL do servidor Eureka
