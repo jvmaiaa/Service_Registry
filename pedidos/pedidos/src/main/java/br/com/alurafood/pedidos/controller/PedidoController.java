@@ -20,7 +20,7 @@ public class PedidoController {
         @Autowired
         private PedidoService service;
 
-        @GetMapping()
+        @GetMapping
         public List<PedidoDto> listarTodos() {
             return service.obterTodos();
         }
